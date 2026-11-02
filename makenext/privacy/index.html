@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>MakeNext beta privacy notice</title>
+<style>
+  :root { --bg: #ffffff; --text: #1d1d1f; --muted: #5f6368; --rule: #e3e3e6; --link: #0a58ca; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111113; --text: #ececf0; --muted: #a3a3ab; --rule: #2c2c31; --link: #7fb0ff; } }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2em 0 0.5em; padding-top: 1em; border-top: 1px solid var(--rule); }
+  p, li { overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; }
+  li { margin: 0.35em 0; }
+  em { color: var(--muted); font-style: normal; }
+  a { color: var(--link); }
+  code { font: inherit; }
+</style>
+</head>
+<body>
+<main>
+<h1>MakeNext beta: what happens to your information</h1>
+<p><em>Last updated: November 2, 2026</em></p>
+<p>MakeNext is in a private beta. This notice explains what stays on your phone, what reaches MakeNext's server, what goes to the services MakeNext uses, and what you can delete.</p>
+<h2>1. Your space on this phone</h2>
+<ul>
+<li><strong>New to MakeNext:</strong> when you sign in with your beta invite, MakeNext opens a new, empty space that belongs to you.</li>
+<li><strong>Updating from an earlier test build that kept one shared space on the phone:</strong> This update starts MakeNext fresh. Work saved in earlier test builds won’t appear in the new version. Your earlier test data stays on this phone, untouched, but it can't be opened in the new version. Deleting the app removes it. When you sign in with your beta invite, you get a new, empty space of your own.</li>
+<li><strong>Updating from a version that already gave you your own space:</strong> your work carries over. Before updating it to the new version, MakeNext keeps a copy of the earlier version on the phone. If that copy can't be saved, MakeNext changes nothing and tries again later.</li>
+</ul>
+<p>If more than one person signs in on the same phone, each person gets their own separate space, and one person's work, notes and Instagram data are never shown to the other.</p>
+<h2>2. What stays on your phone</h2>
+<p>Your profile and onboarding answers, your plans, ideas, shot lists, drafts and post packages, your plays and their results, your reviews and your privacy boundaries are stored on your phone, in your own space. MakeNext works out your numbers, baselines and post reads on the phone; they are not sent anywhere. "Export my data" in Profile and settings gives you a copy of your space.</p>
+<p>Photos and clips stay in your photo library. MakeNext reads only the ones you choose for a post, and keeps only temporary copies in the app's cache, which iOS may clear. If you give MakeNext full access to your photos, it also checks on the phone that the ones you chose are still there; nothing about that check leaves the phone.</p>
+<p>Your beta sign-in is kept in the phone's Keychain, readable only while the phone is unlocked and never copied to another device by a backup. A small Keychain marker that this phone uses beta sign-in can stay on the phone even after MakeNext is deleted; if MakeNext is reinstalled, it asks you to sign in again.</p>
+<h2>3. What reaches MakeNext's server</h2>
+<p>MakeNext's server (Google Cloud, in the United States: Northern Virginia, <code>us-east4</code>) keeps, for your beta access:</p>
+<ul>
+<li><strong>Your beta access:</strong> a random beta reference for you, your invite and sessions (stored only as one-way hashes), and a random reference for each phone install. These access records do not contain your name, email address or phone number. That does not mean the server holds no personal data about you: the person running the beta knows which reference is yours, so everything stored under it (your notes, your usage records and, if you connect it, your Instagram data) is personal data about you. Sessions end after 90 days; used invites are cleared after 7 days.</li>
+<li><strong>Usage limits:</strong> counts of requests per day, kept for 35 days, and short-lived records used to enforce limits and spending caps, kept for 7 days.</li>
+<li><strong>App usage signals:</strong> only two kinds of event, "the app came back to the foreground" and the outcome of an idea generation (which version you saw, and how many tries were made). The server adds the day, the build and your beta references. No text, idea, name or identifier from your content is sent. For each AI request, the server also records which AI service and model answered, how long it took and how much it used, never what was asked or answered. These usage records are kept for 90 days.</li>
+<li><strong>Notes you ask MakeNext to remember</strong> (Ask, "Remember this"): up to 20 short notes. They are kept until you delete them, until they expire after 90 days, or until your beta access is removed.</li>
+<li><strong>If you connect Instagram:</strong> see section 5.</li>
+</ul>
+<p>The server's request logs record which feature was used, whether it worked and how long it took. They contain no beta reference, Instagram account, text or media.</p>
+<h2>4. What goes to the services MakeNext uses</h2>
+<ul>
+<li><strong>Ask, idea generation, post packages ("I shot this") and the profile check</strong> go through MakeNext's server to Google's Gemini API, the AI service MakeNext uses. Each request carries only what that feature needs, after your privacy boundaries are applied:<ul><li><strong>Ask:</strong> your message and the context of the screen you are on.</li><li><strong>Idea generation:</strong> what you asked for and a short summary MakeNext compiles from your profile.</li><li><strong>Post packages:</strong> what you wrote about the shoot, short lines about you and the plan, and smaller copies of the photos and a few still frames from each clip you chose, sent once. No sound is read or sent.</li><li><strong>Profile check:</strong> the bio text you type, with links, emails, handles and phone numbers replaced first, sent once.</li></ul><p>MakeNext does not keep the photos, frames or text after the answer. MakeNext uses Google's paid Gemini API. Under Google's terms for paid use, Google doesn't use what is sent or its answers to improve its products. Google does keep what is sent, including photos and frames, and its answers for 55 days to detect abuse and misuse. MakeNext switches off Google's optional storage in each request, but that doesn't stop this 55-day retention. MakeNext doesn't control where Google processes these requests.</p></li>
+<li><strong>Web research for plans is switched off in this beta.</strong> The plan screen may still offer to look up what's on. If you tap it, the place you typed, your plan's dates and up to two general topics go to MakeNext's server, which answers that research isn't available. Nothing is sent to a search service, and the server keeps nothing from the request. Your plan's own ideas still work. If web research is switched on later, this notice will be updated first.</li>
+</ul>
+<h2>5. Instagram (only if you connect it)</h2>
+<p>Connecting is optional and uses Instagram's official login. In this beta MakeNext only reads: it never posts, comments, replies or sends messages for you, and it does not read your comments or messages.</p>
+<p>When you connect, MakeNext's server stores:</p>
+<ul>
+<li>an encrypted access token;</li>
+<li>for each of your posts, its Instagram ID, media type, publish time and link (not its caption);</li>
+<li>each post's numbers per day;</li>
+<li>your account's daily followers, views and reach.</li>
+</ul>
+<p>It also records which day was last read, so it can keep your phone up to date, and copies the same posts and numbers to your phone. It checks for new numbers when you open the app.</p>
+<p><strong>Disconnecting is not deleting.</strong> "Disconnect" deletes the access token, so MakeNext can't read your Instagram any more. What was already read stays on MakeNext's server and on your phone. You can also remove MakeNext from Instagram's own settings.</p>
+<h2>6. Deleting your information</h2>
+<ul>
+<li><strong>On your phone:</strong> delete a note in Profile and settings ("What MakeNext remembers"), or delete the app. Deleting the app removes your spaces and any earlier test data from the phone; the small Keychain marker described above can remain.</li>
+<li><strong>Notes on the server:</strong> delete one or all of them in Profile and settings ("What MakeNext remembers"). They also expire after 90 days.</li>
+<li><strong>Everything else MakeNext's server holds about you:</strong> MakeNext can't yet delete all of this for you. Stopping your access and deleting your information are different things:<ul><li><strong>Stopping your access (available now):</strong> ask the operator at <a href="mailto:jessemainor@gmail.com">jessemainor@gmail.com</a>. Your beta access ends at once: MakeNext's server stops accepting your sign-in on every phone. MakeNext also deletes your notes and your Instagram access token, so nothing more is read from your Instagram. Nothing else is deleted.</li><li><strong>Deleting your information (not available yet):</strong> the Instagram data already read and your beta access record stay on MakeNext's server, and your usage records stay until they expire (section 3). Before MakeNext can delete them for you, this notice will be updated.</li></ul></li>
+</ul>
+<h2>7. Contact</h2>
+<p>For privacy requests, contact the operator at <a href="mailto:jessemainor@gmail.com">jessemainor@gmail.com</a>.</p>
+</main>
+</body>
+</html>
